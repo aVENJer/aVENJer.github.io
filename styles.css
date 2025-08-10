@@ -3,14 +3,14 @@
 /*
    Author: Johnathon Ventiere
    Date:   08/10/2025
-   title: Project
+   
    Filename: styles.css
 
 */
 body
 {
   background-color: white;  /* changes the bacground color to the annotated color */
-  font-family: Arial, Helvetica, sans-serif;   
+  font-family: Arial, Helvetica, sans-serif;   /*  */
   color: black; /* displays the text in the annotated color */
 }
 header
