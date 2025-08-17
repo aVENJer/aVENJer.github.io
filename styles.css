@@ -39,6 +39,8 @@ a:hover /* displays changes to text when links are hovered */
 {
   background-color: purple; 
   color: rgb(77, 216, 77);
+  transition: all;
+  transform: scale(1.02);
 }
 section#about
 {
