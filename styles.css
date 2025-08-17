@@ -2,15 +2,15 @@
 
 /*
    Author: Johnathon Ventiere
-   Date:   08/10/2025
+   Date:   08/17/2025
    
    Filename: styles.css
 
 */
 body
 {
-  background-color: gray;  /* changes the bacground color to the annotated color */
-  font-family: Arial, Helvetica, sans-serif;   /*  */
+  background-color: gray;  /* changes the background color to the annotated color */
+  font-family: Arial, Helvetica, sans-serif;   
   color: black; /* displays the text in the annotated color */
 }
 header
@@ -29,48 +29,50 @@ nav ul
     list-style-type: none;  /* removes the bullets */
     display: flex;  /* displays the list horizontally */
     padding: 0.25em;
-    margin-left: 9em;
-    margin-right: 9em;
+    margin-left: 0;
+    margin-right: 0;
     width: 100%;
-    gap: 45em;
     font-weight: bold;
+    gap: 2em;
+    justify-content: center;
 }
 a
 {
   display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease;
   transform: scale(1.02);
 }
 a:hover /* displays changes to text when links are hovered */
 {
-  background-color: purple; 
-  color: rgb(77, 216, 77);
+  background-color: black; 
+  color: antiquewhite;
   transition: all;
 }
 section#about
 {
   padding: 2em;
   margin: 2em;
-  border: .25em solid red;
-  background-color: black;
-  color: white;
+  border: .25em solid black;
+  background-color: antiquewhite;
+  color: black;
   text-align: center;
 }
 section#projects
 {
   padding: 2em;
   margin: 2em;
-  border: .25em solid red;
-  background-color: black;
-  color: white;
+  border: .25em solid black;
+  background-color: antiquewhite;
+  color: black;
   text-align: center;
 }
 section#contact
 {
   padding: 2em;
   margin: 2em;
-  border: .25em solid red;
-  background-color: black;
-  color: white;
+  border: .25em solid black;
+  background-color: antiquewhite;
+  color: black;
   text-align: center;
 }
 footer
@@ -87,12 +89,25 @@ table
 }
 table th, td
 {
-  border: 1px ridge white;
-  padding: 10px;
+  border: 1px solid black;
+  padding: 5px;
   text-align: left;
 }
 table thead
 {
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
+}
+table caption
+{
+  caption-side: top;
+  font-weight: bold;
+  padding: 5px;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+section:hover
+{
+  transform: scale(1.02); /* adjusts the scaling wehn section is hovered over */
 }
