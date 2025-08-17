@@ -83,7 +83,7 @@ table
 }
 table th, td
 {
-  border: 1px ridge;
+  border: 1px ridge white;
   padding: 10px;
   text-align: left;
 }
