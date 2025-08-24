@@ -107,6 +107,15 @@ table caption
   color: white;
   border: 1px solid white;
 }
+.table-wrapper 
+{
+   width: 100%;
+   overflow-x: auto;
+}
+.table-wrapper table
+{
+   min-width: 600px;
+}
 section:hover
 {
   transform: scale(1.02); /* adjusts the scaling wehn section is hovered over */
