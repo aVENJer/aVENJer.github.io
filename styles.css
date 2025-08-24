@@ -151,7 +151,22 @@ input:focus, textarea:focus
    border-color: blue;
    outline: none;
 }
-
+button[type="submit"]
+{
+   padding: 10px 20px;
+   background-color: blue;
+   color: white;
+   border: none;
+   border-radius: 4px;
+   font-size: 1rem;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+button[type="submit]:hover,
+button[type="submit"]:focus
+{
+   background-color: cobalt;
+}
 
 
    
