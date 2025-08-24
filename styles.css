@@ -48,6 +48,13 @@ a:hover /* displays changes to text when links are hovered */
   color: antiquewhite;
   transition: all;
 }
+section
+{
+   width: 100%;
+   margin: 0;
+   padding: 2rem;
+   box-sizing: border-box;
+}
 section#about
 {
   padding: 2em;
