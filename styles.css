@@ -133,3 +133,25 @@ nav
    max-width: 600px;
    margin: 0 auto;
 }
+.form-group
+{
+   display: flex;
+   flex-direction: column;
+}
+input, textarea
+{
+   padding: 10px;
+   border: 1px solid gray;
+   border-radius: 4px;
+   transition: border-color 0.3s ease;
+   font-size: 1rem
+}
+input:focus, textarea:focus
+{
+   border-color: blue;
+   outline: none;
+}
+
+
+
+   
