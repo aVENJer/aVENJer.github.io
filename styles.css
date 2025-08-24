@@ -55,6 +55,7 @@ section
    margin: 0;
    padding: 2rem;
    box-sizing: border-box;
+   justify-content: center;
 }
 section#about
 {
