@@ -1,46 +1,55 @@
-<!DOCTYPE html> <!-- HTML declaration-->
-<html lang="en"> <!-- Language attribute -->
+<!DOCTYPE html> <!-- HTML declaration -->
+<html lang="en"> <!-- Sets language for accessibility and SEO -->
   <head>
-    <link rel="stylesheet" href="styles.css">
-    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css"> <!-- Links external CSS -->
+    <meta charset="UTF-8" /> <!-- Character encoding -->
     <meta name="description" content="webpage course project">
     <meta name="keywords" content="HTML, webpage, about, projects, contact">
     <meta name="author" content="Johnathon Ventiere">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures responsiveness -->
   </head>
+
   <body>
-   <header>
-     <h1>WELCOME!</h1> <!-- Message welcoming users -->
-   </header>
-        <nav> <!-- Nav menu with ul with links -->
+    <header>
+      <h1>WELCOME!</h1> <!-- Main page heading -->
+    </header>
+
+    <nav> <!-- Navigation menu -->
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li> <!-- Anchor link to About -->
+        <li><a href="#projects">Projects</a></li> <!-- Anchor link to Projects -->
+        <li><a href="#contact">Contact</a></li> <!-- Anchor link to Contact -->
       </ul>
     </nav>
-     <main>
-       <section id="about"> <!-- About section-->
+
+    <main>
+      <!-- Flexbox container to align sections side-by-side -->
+      <div class="main-sections">
+
+        <!-- About Section -->
+        <section id="about">
           <h2>About</h2>
           <p>This is the About section.</p>
-       </section>
-       <section id="projects"> <!-- Projects section -->
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
           <h2>Projects</h2>
           <div class="table-wrapper">
-          <table>
-            <caption>Sample Projects</caption>  <!-- Caption for the table -->
-            <colgroup>
-              <col style="background-color: rgba(153, 151, 151, 0.774);"> <!-- Sets the background color for the first column-->
-              <col>
-              <col style="background-color: rgba(153, 151, 151, 0.774);"> <!-- Sets the background color for the third column-->
-            </colgroup>
-            <thead>
-              <tr>
-                <th>Project Name</th> <!-- Topic of first column displaying the name of the project-->
-                <th>Description</th>  <!-- Describes the project-->
-                <th>Image Placeholder</th>  
-              </tr>
-            </thead>
+            <table>
+              <caption>Sample Projects</caption> <!-- Table title -->
+              <colgroup>
+                <col style="background-color: rgba(153, 151, 151, 0.774);"> <!-- First column styling -->
+                <col> <!-- Second column -->
+                <col style="background-color: rgba(153, 151, 151, 0.774);"> <!-- Third column styling -->
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>Project Name</th> <!-- Table column headers -->
+                  <th>Description</th>
+                  <th>Image Placeholder</th>
+                </tr>
+              </thead>
               <tbody>
                 <tr>
                   <td>Project One</td>
@@ -53,36 +62,45 @@
                   <td>Image Placeholder</td>
                 </tr>
               </tbody>
-          </table>
+            </table>
           </div>
           <p>This is the Projects section.</p>
-       </section>
-       <section id="contact"> <!-- Contact section -->
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
           <h2>Contact</h2>
           <form id="contact-form">
+            <!-- Name field -->
             <div class="form-group">
               <label for="name">Name:</label>
               <input type="text" id="name" name="name" required />
             </div>
+            <!-- Email field -->
             <div class="form-group">
               <label for="email">Email:</label>
               <input type="email" id="email" name="email" required />
             </div>
+            <!-- Subject field -->
             <div class="form-group">
               <label for="subject">Subject:</label>
               <input type="text" id="subject" name="subject" />
             </div>
+            <!-- Message field -->
             <div class="form-group">
               <label for="message">Message:</label>
               <textarea id="message" name="message" rows="5"></textarea>
             </div>
+            <!-- Submit button -->
             <button type="submit">Send Message</button>
           </form>
-       </section>
-     </main>
-    <footer> 
-      <p>&nbspJohnathon Ventiere. Course Project.</p> <!-- HTML characater entity in footer-->
-    </footer>
-    </body>
-</html>
+        </section>
 
+      </div> <!-- End of .main-sections -->
+    </main>
+
+    <footer>
+      <p>&nbsp;Johnathon Ventiere. Course Project.</p> <!-- Footer with non-breaking space -->
+    </footer>
+  </body>
+</html>
