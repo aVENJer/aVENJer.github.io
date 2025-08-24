@@ -240,9 +240,11 @@ button[type="submit"]:focus
 {
    main
    {
-      min-width: 900px;
-      flex-direction: column; 
-      gap: 2rem;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
    }
    nav
    {
