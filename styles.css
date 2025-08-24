@@ -205,11 +205,11 @@ button[type="submit"]:focus
          margin: 0 auto;
       }
    }
-@media (min-width: 900px)
+@media (min-width: 1200px)
 {
    main
    {
-      min-width: 900px;
+      min-width: 1200px;
       flex-direction: row; 
       gap: 2rem;
    }
