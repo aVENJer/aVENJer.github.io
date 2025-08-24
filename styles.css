@@ -61,7 +61,7 @@ section
 section#about
 {
   padding: 2em;
-  margin: 0;
+  margin: 2em;
   border: .25em solid black;
   background-color: antiquewhite;
   color: black;
@@ -70,7 +70,7 @@ section#about
 section#projects
 {
   padding: 2em;
-  margin: 0;
+  margin: 2em;
   border: .25em solid black;
   background-color: antiquewhite;
   color: black;
@@ -79,7 +79,7 @@ section#projects
 section#contact
 {
   padding: 2em;
-  margin: 0;
+  margin: 2em;
   border: .25em solid black;
   background-color: antiquewhite;
   color: black;
@@ -145,8 +145,6 @@ main
    padding: 2em;
    width: 100%;
    box-sizing: border-box;
-   justify-content: center;
-   align-items: flex-start;
 }
 nav
 {
