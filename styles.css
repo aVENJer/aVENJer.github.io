@@ -50,6 +50,7 @@ a:hover /* displays changes to text when links are hovered */
 }
 section
 {
+   flex: 1;
    width: 100%;
    margin: 0;
    padding: 2rem;
@@ -130,9 +131,11 @@ section:hover
 main
 {
    display: flex;
-   flex-direction: column;
+   flex-direction: row;
    gap: 2rem;
-   padding: 20px;
+   padding: 2rem;
+   width: 100%;
+   box-sizing: border-box;
 }
 nav
 {
