@@ -162,10 +162,10 @@ button[type="submit"]
    cursor: pointer;
    transition: background-color 0.3s ease;
 }
-button[type="submit]:hover,
+button[type="submit"]:hover,
 button[type="submit"]:focus
 {
-   background-color: purple;
+   background-color: cobaltblue;
 }
 @media (max-width: 599px)
 {
