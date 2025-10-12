@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title>Project</title>
 </head>
 <body>
     <!-- Navigation Menu -->
@@ -15,7 +15,7 @@
         </ul>
     </nav>
 
-    <!-- Welcome message (updated by JavaScript) -->
+    <!-- Welcome message that will be updated with JavaScript -->
     <h1 id="welcome-message"></h1>
 
     <!-- Main Content -->
@@ -64,10 +64,10 @@
 
     <!-- JavaScript for Personalized User Interaction -->
     <script>
-        // Prompt the user for their name
+        // Asks user for their name
         var userName = prompt("Please enter your name?");
 
-        // Update the welcome message with the user's name
+        // Updates the welcome message using the user's name
         var welcomeMessage = document.getElementById("welcome-message");
         if (userName) {
             welcomeMessage.textContent = "Welcome, " + userName + "!";
