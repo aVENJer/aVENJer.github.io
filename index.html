@@ -6,7 +6,7 @@
     <title>Johnathon's Portfolio</title>
 
     <style>
-        /* General page setup */
+        /* general page setup */
         body {
             font-family: "Segoe UI", Tahoma, sans-serif;
             background-color: #fafafa;
@@ -17,7 +17,7 @@
             transition: background-color 0.3s ease, color 0.3s ease;
         }
 
-        /* Simple top navigation */
+        /* simple top nav */
         nav ul {
             list-style: none;
             display: flex;
@@ -38,7 +38,7 @@
             text-decoration: underline;
         }
 
-        /* Container styling for sections */
+        /* container styles for sections */
         section {
             background: white;
             margin: 25px auto;
@@ -53,10 +53,11 @@
             padding-bottom: 5px;
         }
 
-        /* Featured section styles */
+        /* featured content area */
         #featured-content {
             background-color: #eef5ff;
             border-left: 5px solid #003366;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
 
         #featured-content div {
@@ -64,13 +65,15 @@
             padding: 15px;
             border-radius: 5px;
             margin-top: 10px;
+            background-color: #f7fbff;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
         }
 
         .hidden {
             display: none;
         }
 
-        /* Dark mode styles */
+        /* dark mode colors */
         .dark-mode {
             background-color: #121212;
             color: #f2f2f2;
@@ -89,7 +92,19 @@
             color: #fff;
         }
 
-        /* Dark mode toggle (simple checkbox style) */
+        /* dark mode styling for featured content */
+        .dark-mode #featured-content {
+            background-color: #1a1f2b;
+            border-left: 5px solid #77aaff;
+            color: #e0e6ff;
+        }
+
+        .dark-mode #featured-content div {
+            background-color: #232b3a;
+            border-color: #5c6f91;
+        }
+
+        /* dark mode toggle */
         .dark-toggle {
             position: fixed;
             top: 15px;
@@ -104,7 +119,7 @@
             gap: 6px;
         }
 
-        /* Project images */
+        /* project thumbnails */
         #projects img {
             margin: 10px;
             border-radius: 5px;
@@ -117,7 +132,7 @@
             border-color: #003366;
         }
 
-        /* Contact form styles */
+        /* contact form layout */
         form label {
             display: block;
             margin-top: 10px;
@@ -152,12 +167,12 @@
 
 <body>
 
-    <!-- dark mode toggle at the top right -->
+    <!-- dark mode toggle button -->
     <label class="dark-toggle">
         <input type="checkbox" id="dark-mode-toggle"> Dark Mode
     </label>
 
-    <!-- navigation bar -->
+    <!-- top navigation -->
     <nav>
         <ul>
             <li><a href="#about">About</a></li>
@@ -167,7 +182,7 @@
         </ul>
     </nav>
 
-    <!-- personalized welcome message -->
+    <!-- greeting message -->
     <h1 id="welcome-message"></h1>
 
     <main>
@@ -176,7 +191,7 @@
             <h2>About</h2>
             <p>Hey there! I’m Johnathon — I served in the Navy for nearly 14 years, and now I’m diving headfirst into tech and learning everything I can in this program.</p>
 
-            <!-- this list will be filled dynamically with JS -->
+            <!-- skills list will be added with JS -->
             <h3>Skills & Tools</h3>
             <ul id="skills-list"></ul>
         </section>
@@ -192,7 +207,7 @@
                 <a href="https://www.ecpi.edu" target="_blank">Visit ECPI University</a>
             </div>
 
-            <!-- personal project links -->
+            <!-- personal projects -->
             <div id="personal-projects">
                 <h3>Personal Projects</h3>
                 <a href="https://github.com/aVENJer/project1" target="_blank">
@@ -244,12 +259,12 @@
     </main>
 
     <script>
-        // greet the user with their name when they load the page
+        // greet user with their name
         const namePrompt = prompt("What’s your name?");
         const welcomeMsg = document.getElementById("welcome-message");
         welcomeMsg.textContent = namePrompt ? `Welcome, ${namePrompt}!` : "Welcome to my portfolio!";
 
-        // create a list of skills dynamically
+        // populate skills list
         const skills = ["HTML", "CSS", "JavaScript", "Git", "GitHub"];
         const skillsList = document.getElementById("skills-list");
 
@@ -259,12 +274,11 @@
             skillsList.appendChild(li);
         });
 
-        // figure out how many projects are listed
+        // show/hide featured content depending on project count
         const projectCount = document.querySelectorAll("#projects img").length;
         const universityDiv = document.getElementById("university-resources");
         const personalDiv = document.getElementById("personal-projects");
 
-        // show/hide featured sections based on project count
         if (projectCount < 3) {
             universityDiv.classList.remove("hidden");
             personalDiv.classList.remove("hidden");
@@ -273,13 +287,13 @@
             personalDiv.classList.remove("hidden");
         }
 
-        // dark mode toggle handler
+        // toggle dark mode theme
         const darkToggle = document.getElementById("dark-mode-toggle");
         darkToggle.addEventListener("change", () => {
             document.body.classList.toggle("dark-mode");
         });
 
-        // intercept form submit and show confirmation instead
+        // handle form submission without refreshing page
         const form = document.getElementById("contact-form");
         form.addEventListener("submit", e => {
             e.preventDefault();
